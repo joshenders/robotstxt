@@ -28,6 +28,8 @@
 #include <cstddef>
 #include <vector>
 
+#include <iostream>
+
 #include "absl/base/macros.h"
 #include "absl/container/fixed_array.h"
 #include "absl/strings/ascii.h"
@@ -108,7 +110,7 @@ class RobotsMatchStrategy {
       if (numpos == 0) return false;
     }
   }
-
+  std::cout << "Matched: " << pattern << std::endl;
   return true;
 }
 
